@@ -1,0 +1,16 @@
+{
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "bundler",
+    "noEmitOnError": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}

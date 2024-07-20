@@ -1,0 +1,47 @@
+{
+  "name": "@yourname/radashi",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/radashi.cjs",
+  "module": "dist/radashi.js",
+  "types": "dist/types/mod.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/mod.d.ts",
+      "require": "./dist/radashi.cjs",
+      "default": "./dist/radashi.js"
+    }
+  },
+  "sideEffects": false,
+  "browserslist": [
+    ">0.1% and not dead",
+    "node >= 16"
+  ],
+  "scripts": {
+    "bench": "vitest bench",
+    "build": "radashi build",
+    "dev": "radashi build --watch",
+    "fn": "radashi fn",
+    "format": "radashi format",
+    "lint": "radashi lint",
+    "open": "radashi open",
+    "override": "radashi override",
+    "pr": "radashi pr",
+    "test": "radashi test",
+    "shipit": "radashi shipit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.11",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint-plugin-compat": "^6.0.0",
+    "prettier": "^3.3.3",
+    "radashi-helper": "link:../radashi-helper",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  },
+  "dependencies": {
+    "radashi": "beta"
+  }
+}

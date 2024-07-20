@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedDeclarations": true,
+    "target": "esnext",
+    "lib": ["es2020"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": [],
+    "paths": {
+      "radashi": ["../../mod"]
+    }
+  }
+}
