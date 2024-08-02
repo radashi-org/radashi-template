@@ -37,7 +37,7 @@
     "@typescript-eslint/parser": "^7.17.0",
     "eslint-plugin-compat": "^6.0.0",
     "prettier": "^3.3.3",
-    "radashi-helper": "link:../radashi-helper",
+    "radashi-helper": "latest",
     "typescript": "^5.5.3",
     "vitest": "^2.0.3"
   },
