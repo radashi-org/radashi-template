@@ -11,6 +11,9 @@ export default defineConfig({
       thresholds: { 100: true },
       exclude: ['*.config.ts', 'benchmarks/**', 'tests/**/*.test-d.ts'],
     },
+    benchmark: {
+      exclude: ['**/.radashi/**'],
+    },
     exclude: ['**/.radashi/**', '**/node_modules/**'],
   },
   resolve: {
