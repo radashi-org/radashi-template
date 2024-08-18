@@ -35,11 +35,12 @@
     "@biomejs/biome": "^1.8.3",
     "@types/node": "^20.14.11",
     "@typescript-eslint/parser": "^7.17.0",
+    "@vitest/coverage-v8": "2.0.5",
     "eslint-plugin-compat": "^6.0.0",
     "prettier": "^3.3.3",
     "radashi-helper": "latest",
     "typescript": "^5.5.3",
-    "vitest": "^2.0.3"
+    "vitest": "2.0.5"
   },
   "dependencies": {
     "radashi": "beta"

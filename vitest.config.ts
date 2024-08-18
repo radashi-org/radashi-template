@@ -4,17 +4,18 @@ import { defineConfig } from 'vitest/config'
 const resolve = (specifier: string) =>
   new URL(import.meta.resolve(specifier)).pathname
 
-export default defineConfig({
+export default defineConfig(env => ({
   test: {
     globals: true,
+    include: ['tests/**/*.test.ts'],
+    benchmark: {
+      include: ['benchmarks/**/*.bench.ts'],
+    },
     coverage: {
       thresholds: { 100: true },
-      exclude: ['*.config.ts', 'benchmarks/**', 'tests/**/*.test-d.ts'],
+      include: ['src/**'],
     },
-    benchmark: {
-      exclude: ['**/.radashi/**'],
-    },
-    exclude: ['**/.radashi/**', '**/node_modules/**'],
+    setupFiles: env.mode === 'benchmark' ? ['benchmarks/globals.ts'] : [],
   },
   resolve: {
     alias: {
@@ -22,4 +23,4 @@ export default defineConfig({
     },
   },
   plugins: [vitestRadashi()],
-})
+}))
