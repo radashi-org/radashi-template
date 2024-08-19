@@ -37,11 +37,11 @@
     "@types/node": "^20.14.11",
     "@vitest/coverage-v8": "2.0.5",
     "prettier": "^3.3.3",
-    "radashi-helper": "latest",
+    "radashi-helper": "link:../..",
     "typescript": "^5.5.3",
     "vitest": "2.0.5"
   },
   "dependencies": {
-    "radashi": "beta"
+    "radashi": "12.2.0-beta.af825f4"
   }
 }
