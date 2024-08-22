@@ -23,7 +23,8 @@
   },
   "search.exclude": {
     "**/dist": true,
-    "**/overrides/rewired": true
+    "**/overrides/rewired": true,
+    "**/pnpm-lock.yaml": true
   },
   "files.exclude": {
     "**/.radashi": true
