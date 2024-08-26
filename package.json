@@ -14,10 +14,6 @@
     }
   },
   "sideEffects": false,
-  "browserslist": [
-    ">0.1% and not dead",
-    "node >= 16"
-  ],
   "scripts": {
     "bench": "vitest bench",
     "build": "radashi build",
