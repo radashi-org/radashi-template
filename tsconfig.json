@@ -1,5 +1,5 @@
 {
-  "exclude": ["dist"],
+  "exclude": ["dist", ".radashi"],
   "compilerOptions": {
     "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
